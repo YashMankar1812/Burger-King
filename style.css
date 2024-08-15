@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(176, 76, 6);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+#order-id {
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(235, 235, 24);
+    top: 10px;
+}
+
+#food-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 20px;
+    background-color:bisque;
+    padding: 10px;
+    border-radius: 8px;
+    border: 10px solid rgb(95, 23, 23);
+    margin-left: 60px;
+    width: 80%;
+}
+
+h1 {
+    font-size: 22px;
+     color: #dad7d7;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 15px;
+    color: #f8f801;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Section Styles */
+.burger, .drink, .Sides, .desert {
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(122, 60, 15);
+    border-radius: 8px;
+
+}
+
+label {
+    display: grid;
+    font-size: 16px;
+    font-weight: 400;
+    color:#a7a4a1;
+    margin: 10px 0;
+    padding-left: 10px;
+    position: relative;
+}
+pre{
+    font-size: 25px;
+    color: wheat;
+}
+p{
+    font-size: 40px;
+    color: wheat;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Button Styles */
+#order-button {
+    margin: 10px;
+    width: 20%;
+    background-color: #38910f;
+    color: wheat;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#order-button:hover {
+    background-color: #e07b00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #food-selection {
+        grid-template-columns: 1fr; 
+        margin: 10px;
+
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: end;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    label {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+    }
+}
