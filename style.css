@@ -12,7 +12,11 @@ header {
     padding: 10px;
     position: relative;
 }
-
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
 #order-id {
     position: absolute;
     right: 20px;
@@ -59,13 +63,19 @@ h2{
 }
 
 label {
-    display: grid;
+    /* display: grid; */
+    display: flex;
     font-size: 16px;
     font-weight: 400;
     color:#a7a4a1;
-    margin: 10px 0;
-    padding-left: 10px;
+    
+    margin:20px 0;
+    /* padding-left: 10px; */
     position: relative;
+}
+input{
+    display: flex;
+    flex-direction: column;
 }
 pre{
     font-size: 25px;
@@ -83,21 +93,24 @@ input[type="checkbox"] {
 
 /* Button Styles */
 #order-button {
-    margin: 10px;
-    width: 20%;
-    background-color: #38910f;
-    color: wheat;
-    padding: 15px 0;
+    margin: 30px;
+    width: 10%;
+    background-color: #27640b;
+    color: rgb(251, 250, 248);
+    padding: 20px 0;
     font-size: 16px;
     font-weight: 700;
     border: none;
-    border-radius: 8px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    animation: pop 2s ease;
+
 }
 
 #order-button:hover {
     background-color: #e07b00;
+    transform: scaleX(1.09);
 }
 
 /* Responsive Design */
@@ -116,6 +129,10 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 480px) {
+    header{
+        /* position: relative; */
+        width: 100%;
+    }
     label {
         font-size: 14px;
     }
@@ -124,5 +141,8 @@ input[type="checkbox"] {
         font-size: 18px;
         text-align: center;
         padding: 20px;
+    }
+    #order-button{
+        width: 40%;
     }
 }
